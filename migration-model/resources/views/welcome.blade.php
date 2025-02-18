@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CIT18-LabActivities</title>
+    <link href="https://bootswatch.com/5/sketchy/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
 </head>
 <body>
+    @include("partials.nav")
     <h1 style="text-align:center; margin-top: 150px;">Hello, Laravel!</h1>
     <div style="width:100%;height:100%; display:flex; align-items:center; justify-content:center;">
     <h2 style="display:block;">Click to go to the  Greet Activity</h2>
