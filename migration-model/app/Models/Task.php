@@ -25,6 +25,7 @@ class Task extends Model
             return $this->where('id', $id)->update([
                 'title' => $record['title'],
                 'description' => $record['description'],
+                'is_completed' => $record['is_completed']
             ]);
         });
     }

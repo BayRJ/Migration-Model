@@ -27,10 +27,21 @@
                 <input type="text" name="description" value="{{ $description }}" id="descriptionEdit" placeholder="e.g.In the beginning of alien..." style="padding:8px; padding-left: 15px; font-size:18px; width: 100%; border-radius:8px;" required>
             </td>
         </tr>
+        <tr>
+            <td>
+                <label for="is_completedEdit" style="font-weight: bold; font-size: 24px; margin-bottom: 15px;">Did you finished the task:</label>
+                <select name="is_completed" id="is_completedEdit">
+                    <option value=1>Yes</option>
+                    <option value=0>No</option>
+
+                </select>
+            </td>
+        </tr>
+
 
 
     <input type="hidden" name="id" value="{{ $id }}">
-
+6
     @else
     <div style='width: 100%; height: 10%; display: flex; justify-content: center; align-items:center; flex-direction:column; margin-top: 80px;'>
         <h1>Add New Task</h1>
@@ -50,6 +61,7 @@
                 <input type="text" name="description" id="description" placeholder="e.g.In the beginning of alien..." style="padding:8px; padding-left: 15px; font-size:18px; width:100%; border-radius:8px;"  required>
             </td>
         </tr>
+
         @endif
         <tr>
             <td style="padding-left: 125px;">

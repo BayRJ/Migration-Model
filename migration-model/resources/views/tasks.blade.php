@@ -15,6 +15,8 @@
         <td >
             <h1 class="text-3xl text-red-500">Title: {{ $task->title }}</h1>
             <p><span style="font-weight:bold;">Description: </span>{{ $task->description }}</p>
+            <p><span style="font-weight:bold;">Completed: </span>{{ $task->is_completed ? "Yes" : "No" }}</p>
+
         </td>
         <td style="padding-left:25px;">
            <a href="{{ route('tasks.show', $task->id) }}" style="padding: 10px;background:	black; font-size:12px; text-decoration:none; border-radius:8px; font-weight:bold; color:white; display:inline-block; margin:0 auto; ">View Task</a>
