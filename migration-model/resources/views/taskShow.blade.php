@@ -13,6 +13,10 @@
         <td>{{$description}}</td>
     </tr>
     <tr>
+        <td>Task Finished:</td>
+        <td>{{$is_completed ? "Yes": "No"}}</td>
+    </tr>
+    <tr>
         <td>
             <a href="{{ route('tasks.edit', $id) }}" style="padding: 10px;background: #FFDE21; font-size:18px; text-decoration:none; border-radius:8px; font-weight:bold; color:black; display:inline-block; margin:0 auto; ">Edit Task</a>
         </td>
